@@ -1,1 +1,104 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101712">
+  <meta name="description" content="BeBetter — Reprends le contrôle de tes habitudes numériques et avance à ton rythme.">
+  <title>BeBetter — Avance à ton rythme</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Accueil BeBetter">
+      <span class="brand-icon">B</span>
+      <span>BeBetter</span>
+    </a>
+    <span class="status"><span class="status-dot"></span> Ton espace personnel</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">TON ESPACE, TES OBJECTIFS</p>
+      <h1>Deviens la personne<br>que tu veux être.</h1>
+      <p class="hero-text">
+        Pas de pression, pas de jugement. Chaque petit pas compte.
+        Tu avances à ton rythme.
+      </p>
+      <a class="primary-button" href="#protection">Découvrir mon espace <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="notice" aria-label="Information">
+      <span class="notice-icon" aria-hidden="true">✦</span>
+      <p><strong>Un espace pour te faire du bien.</strong><br>
+      BeBetter est en construction. Les outils de protection réelle arriveront progressivement.</p>
+    </section>
+
+    <section class="section" id="protection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 — PROTECTION</p>
+          <h2>Ton environnement numérique</h2>
+        </div>
+        <span class="tag">En préparation</span>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">◈</span>
+          <h3>Filtrage personnalisé</h3>
+          <p>Choisis les catégories de sites que tu souhaites éviter et définis tes propres règles.</p>
+          <span class="card-footer">Moteur de filtrage à construire</span>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">◷</span>
+          <h3>Temps d'écran</h3>
+          <p>Prévois des pauses et fixe-toi des objectifs qui respectent ton rythme.</p>
+          <span class="card-footer">Suivi à construire</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="progression">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 — PROGRESSION</p>
+          <h2>Un pas après l'autre</h2>
+        </div>
+      </div>
+
+      <div class="progress-card">
+        <div>
+          <span class="feature-icon" aria-hidden="true">✳</span>
+          <h3>Quelle petite action te ferait du bien aujourd'hui ?</h3>
+          <p>Choisis une idée ou écris ton propre objectif. Pas besoin d'en faire trop.</p>
+        </div>
+        <div class="goal-options" id="goal-options">
+          <button class="goal-button" data-goal="Faire une petite promenade">Marcher un peu</button>
+          <button class="goal-button" data-goal="Lire quelques pages">Lire quelques pages</button>
+          <button class="goal-button" data-goal="Prendre une pause sans écran">Faire une pause écran</button>
+          <button class="goal-button" data-goal="Parler à une personne de confiance">Parler à quelqu'un</button>
+        </div>
+        <form id="goal-form">
+          <label for="custom-goal">Ou écris ton idée</label>
+          <div class="goal-input-row">
+            <input id="custom-goal" name="goal" maxlength="120" placeholder="Ex. : apprendre quelque chose..." autocomplete="off">
+            <button type="submit" class="primary-button">Choisir</button>
+          </div>
+        </form>
+        <div id="goal-result" class="goal-result" role="status" hidden></div>
+      </div>
+    </section>
+
+    <footer>
+      <a class="brand footer-brand" href="#">BeBetter</a>
+      <p>Pas à pas. À ton rythme. Sans jugement.</p>
+      <p class="footer-note">Prototype en construction — aucune protection de navigation n'est encore active.</p>
+    </footer>
+  </main>
+</body>
+</html>
+
