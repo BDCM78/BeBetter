@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -50,7 +50,7 @@
           <span class="feature-icon" aria-hidden="true">◈</span>
           <h3>Filtrage personnalisé</h3>
           <p>Choisis les catégories de sites que tu souhaites éviter et définis tes propres règles.</p>
-          <span class="card-footer">Moteur de filtrage à construire</span>
+          <span class="card-footer">Configuration en cours</span>
         </article>
 
         <article class="feature-card">
@@ -59,6 +59,66 @@
           <p>Prévois des pauses et fixe-toi des objectifs qui respectent ton rythme.</p>
           <span class="card-footer">Suivi à construire</span>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="preferences">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01.1 — PERSONNALISATION</p>
+          <h2>Mes préférences de filtrage</h2>
+        </div>
+      </div>
+
+      <div class="progress-card">
+        <h3>Quels contenus souhaites-tu éviter ?</h3>
+        <p>Choisis les catégories que tu veux filtrer. Tu pourras modifier tes choix plus tard.</p>
+
+        <form id="filter-form">
+          <div class="filter-options">
+            <label class="filter-option">
+              <input type="checkbox" name="filter-category" value="adult">
+              <span>
+                <strong>Contenus pour adultes</strong>
+                <small>Sites réservés aux adultes</small>
+              </span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" name="filter-category" value="dating">
+              <span>
+                <strong>Rencontres en ligne</strong>
+                <small>Sites et services de rencontre</small>
+              </span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" name="filter-category" value="social">
+              <span>
+                <strong>Réseaux sociaux</strong>
+                <small>Plateformes sociales que tu souhaites éviter</small>
+              </span>
+            </label>
+
+            <label class="filter-option">
+              <input type="checkbox" name="filter-category" value="gaming">
+              <span>
+                <strong>Jeux en ligne</strong>
+                <small>Sites de jeux que tu souhaites limiter</small>
+              </span>
+            </label>
+          </div>
+
+          <button class="primary-button" type="submit">
+            Enregistrer mes préférences
+          </button>
+          <p id="filter-result" role="status" aria-live="polite" hidden></p>
+        </form>
+
+        <p class="footer-note">
+          Pour le moment, ces choix sont enregistrés uniquement dans ce navigateur.
+          Ils ne bloquent pas encore les sites sélectionnés.
+        </p>
       </div>
     </section>
 
@@ -76,12 +136,14 @@
           <h3>Quelle petite action te ferait du bien aujourd'hui ?</h3>
           <p>Choisis une idée ou écris ton propre objectif. Pas besoin d'en faire trop.</p>
         </div>
+
         <div class="goal-options" id="goal-options">
           <button class="goal-button" data-goal="Faire une petite promenade">Marcher un peu</button>
           <button class="goal-button" data-goal="Lire quelques pages">Lire quelques pages</button>
           <button class="goal-button" data-goal="Prendre une pause sans écran">Faire une pause écran</button>
           <button class="goal-button" data-goal="Parler à une personne de confiance">Parler à quelqu'un</button>
         </div>
+
         <form id="goal-form">
           <label for="custom-goal">Ou écris ton idée</label>
           <div class="goal-input-row">
@@ -89,6 +151,7 @@
             <button type="submit" class="primary-button">Choisir</button>
           </div>
         </form>
+
         <div id="goal-result" class="goal-result" role="status" hidden></div>
       </div>
     </section>
@@ -101,4 +164,4 @@
   </main>
 </body>
 </html>
-
+```
